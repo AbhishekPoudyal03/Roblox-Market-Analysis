@@ -9,3 +9,10 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload   # http://localhost:8000, docs at /docs
 ```
+
+### Database
+
+```bash
+docker compose up -d                 # start PostgreSQL
+cp backend/.env.example backend/.env # local config
+```
