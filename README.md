@@ -15,4 +15,8 @@ uvicorn app.main:app --reload   # http://localhost:8000, docs at /docs
 ```bash
 docker compose up -d                 # start PostgreSQL
 cp backend/.env.example backend/.env # local config
+
+cd backend
+alembic upgrade head                 # create/update tables
+
 ```
